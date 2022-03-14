@@ -1,0 +1,23 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "This is a Weather App built while following a [Dave Gray](https://www.youtube.com/watch?v=s_Ie_yh_4Co) JavaScript tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drakan21/WeatherApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drakan21/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/Drakan21/WeatherApp#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}
