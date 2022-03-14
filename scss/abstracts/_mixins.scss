@@ -1,0 +1,33 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media-Query mixins */
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin mqh($size) {
+  @media only screen and (min-height: $size) {
+    @content;
+  }
+}
+
+@mixin mqMaxWMinH($sizeW, $sizeH) {
+  // iPadPro w: 1024 & iPhone Plus 6/7/8 h: 736
+  @media only screen and (max-width: $sizeW) and (min-height: $sizeH) {
+    @content;
+  }
+}

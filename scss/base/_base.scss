@@ -1,0 +1,67 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/mixins" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $sunny-color;
+  background-image: url("../img/sunny.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: $font-color;
+  @include mq(768px) {
+    font-size: 22px;
+  }
+}
+
+body {
+  @include flex-center;
+
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+main {
+  @include flex-col;
+
+  width: 100%;
+  max-width: 700px;
+  max-height: 1050px;
+  flex-grow: 1;
+  color: $font-color;
+  background-color: $mask-color;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2.5px $shadow-color;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+img {
+  display: block;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+  border: 1px solid $border-color;
+}
+
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}

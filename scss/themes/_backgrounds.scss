@@ -1,0 +1,26 @@
+@use "../abstracts/colors" as *;
+
+.rain {
+  background-color: $rain-color;
+  background-image: url("../img/rain.jpg");
+}
+.snow {
+  background-color: $snow-color;
+  background-image: url("../img/snow.jpg");
+}
+.night {
+  background-color: $night-color;
+  background-image: url("../img/night.jpg");
+}
+.fog {
+  background-color: $fog-color;
+  background-image: url("../img/fog.jpg");
+}
+.sunny {
+  background-color: $sunny-color;
+  background-image: url("../img/sunny.jpg");
+}
+.clouds {
+  background-color: $clouds-color;
+  background-image: url("../img/clouds.jpg");
+}

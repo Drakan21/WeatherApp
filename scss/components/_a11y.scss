@@ -1,0 +1,27 @@
+@use "../abstracts/colors" as *;
+
+.offscreen {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+  padding: 0;
+  margin: -1px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background: $text-shadow-color;
+  padding: 14px;
+  z-index: 1;
+  color: $font-color;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  top: auto;
+  left: auto;
+}
