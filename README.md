@@ -66,7 +66,7 @@ Tutorial by:
 Some helpful documentation:
 
 - [Mozilla MDN](https://developer.mozilla.org/en-US/docs) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [W3Schools][https://w3schools.com] - Basic W3 resource
+- [W3Schools](https://w3schools.com) - Basic W3 resource
 
 Other Resources:
 
