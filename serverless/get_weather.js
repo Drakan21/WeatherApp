@@ -7,11 +7,11 @@ exports.handler = async (event, context) => {
   const { lat, lon, units } = params;
   const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=${units}&appid=${WEATHER_API_KEY}`;
   try {
-    const wdata = await fetch(url);
-    const jdata = await wdata.json();
+    // const wdata = await fetch(url);
+    // const jdata = await wdata.json();
     return {
       statusCode: 200,
-      body: jdata ? JSON.stringify(jdata) : "",
+      body: { "This is weather data" },
     };
   } catch (err) {
     return {
