@@ -14,9 +14,6 @@ exports.handler = async (event, context) => {
     const wdata = await fetch(encUrl);
     const jdata = await wdata.json();
 
-    console.log("get_coords [RAW]: ", wdata);
-    console.log("get_coords [JSON]: ", jdata);
-
     return {
       statusCode: 200,
       body: JSON.stringify(jdata),
@@ -24,7 +21,7 @@ exports.handler = async (event, context) => {
   } catch (err) {
     return {
       statusCode: 422,
-      body: err.stack,
+      body: jdata,
     };
   }
 };
