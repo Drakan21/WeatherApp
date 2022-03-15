@@ -1,6 +1,6 @@
 
 
-const fetch = require('node-fetch');
+const fetch = import('node-fetch');
 
 const { WEATHER_API_KEY }  = process.env;
 
