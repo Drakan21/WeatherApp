@@ -36,7 +36,11 @@ Users should be able to:
 ### Links
 
 - Solution URL: [gitHub](https://github.com/Drakan21/WeatherApp)
+<<<<<<< HEAD
 - Live Site URL: [netlify](https://roostweatherapp.netlify.app/)
+=======
+- Live Site URL: [Weather APP On Netlify](https://roostweatherapp.netlify.app/)
+>>>>>>> c237a76a0aa7904f2f1b788057dafcaaed2b37bf
 
 ## My process
 
