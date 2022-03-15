@@ -39,11 +39,14 @@ export const getWeatherFromCoords = async (location)=> {
         lon: location.getLongitude(),
         units: location.getUnits()
     };
+    console.log(urlDataObj);
     try {
+        console.log(JSON.stringify(urlDataObj))
         const w_data = await fetch("./.netlify/functions/get_weather", {
             method: 'POST',
             body: JSON.stringify(urlDataObj)
         });
+        console.log(w_data);
         const j_data = await w_data.json();
         return j_data;
     } catch(err) {
@@ -58,8 +61,9 @@ export const getCoordsFromApi = async (entry, units) => {
         entry,
         units    
     };
-
+    console.log(urlDataObj);
     try {
+        
         const w_data = await fetch("./.netlify/functions/get_coords", {
             method: 'POST',
             body: JSON.stringify(urlDataObj)
