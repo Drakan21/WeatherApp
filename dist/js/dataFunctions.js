@@ -31,7 +31,7 @@ export const toProperCase = (text) => {
 
 export const parseValue = (value, sym="") => `${Math.round(Number(value))}${sym}`;
 
-export const getWeatherFromCoords = async (locationObj)=> {
+export const getWeatherFromCoords = async (location)=> {
     // const lat = locationObj.getLatitude();
     // const lon = locationObj.getLongitude();
     // const units = locationObj.getUnits();
