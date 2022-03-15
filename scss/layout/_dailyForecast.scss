@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .dailyForecast {
-  .dailyForecast__title {
+  &__title {
     font-size: 1.1rem;
     text-align: center;
     margin-top: 0.5rem;
@@ -12,7 +12,7 @@
   }
   /* end __title */
 
-  .dailyForecast__content {
+  &__content {
     @include flex-center;
 
     flex-grow: 1;

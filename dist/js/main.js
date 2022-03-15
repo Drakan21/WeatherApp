@@ -32,25 +32,23 @@ const _add_click = (element, callback) => {
 };
 
 const initApp = () => {
-  // add listeners
+  // get elements:
   const geoBtn = document.getElementById("getLocation");
   const homeBtn = document.getElementById("home");
   const saveBtn = document.getElementById("saveLocation");
   const unitBtn = document.getElementById("units");
   const refrBtn = document.getElementById("refresh");
-
+  // add listeners:
   _add_click(geoBtn, getGeoWeather);
   _add_click(homeBtn, getHomeWeather);
   _add_click(saveBtn, saveHomeLocation);
   _add_click(unitBtn, toggleDisplayUnits);
   _add_click(refrBtn, refreshWeatherData);
-
+  // add search event listener:
   const search = document.getElementById("searchBar__form");
   search.addEventListener("submit", submitNewLocation);
-
   // set up
   setPlaceHolderText();
-
   // load weather
   getHomeWeather();
 };

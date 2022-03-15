@@ -54,10 +54,7 @@ export const getWeatherFromCoords = async (location) => {
 
 /* request functions */
 export const getCoordsFromApi = async (entry, units) => {
-  const urlDataObj = {
-    entry,
-    units,
-  };
+  const urlDataObj = { entry, units };
   try {
     const w_data = await fetch("./.netlify/functions/get_coords", {
       method: "POST",

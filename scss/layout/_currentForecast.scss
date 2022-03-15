@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .currentForecast {
-  .currentForecast__location {
+  &__location {
     font-size: 1rem;
     font-weight: normal;
     text-align: center;
@@ -14,7 +14,7 @@
   }
   /* end __location */
 
-  .currentForecast__conditions {
+  &__conditions {
     width: 100%;
     font-size: 1.1rem;
     margin: auto auto 2rem;
@@ -102,7 +102,7 @@
       padding-top: 0.5rem;
 
       @include mqMaxWMinH(1024px, 650px) {
-        margin-top: 1.5rem;
+        margin-top: 0rem;
       }
       @include mqh(1080px) {
         margin-top: 1.5rem;
