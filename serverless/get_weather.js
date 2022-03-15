@@ -9,10 +9,6 @@ exports.handler = async (event, context) => {
   try {
     const wdata = await fetch(url);
     const jdata = await wdata.json();
-
-    console.log("get_weather [RAW]: ", wdata);
-    console.log("get_weather [JSON]: ", jdata);
-
     return {
       statusCode: 200,
       body: JSON.stringify(jdata),
@@ -20,7 +16,7 @@ exports.handler = async (event, context) => {
   } catch (err) {
     return {
       statusCode: 422,
-      body: jdata,
+      body: err.stack,
     };
   }
 };
