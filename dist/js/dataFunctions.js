@@ -41,7 +41,7 @@ export const getWeatherFromCoords = async (location)=> {
     //     const jsonWeather = await wData.json();
     //     return jsonWeather;
     // } catch(err) {
-    //     // console.error(err?.stack)
+    //     // console.error(err.stack)
     //     // report error to remote endpoint??
     // }
     const urlDataObj = {
@@ -73,7 +73,7 @@ export const getCoordsFromApi = async (entry, units) => {
     //     const jsonWeather = await wData.json();
     //     return jsonWeather;
     // } catch(err){
-    //     // console.error(err?.stack);
+    //     // console.error(err.stack);
     //     // report error to remove endpoint??
     // }
 

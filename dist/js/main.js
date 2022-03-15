@@ -62,7 +62,7 @@ const getGeoWeather = (event) => {
 }
 
 const geoError = (errObj) => {
-    const errMsg = errObj?.message ?? 'Geolocation not supported';    
+    const errMsg = errObj ? errObj.message : 'Geolocation not supported';    
     displayError(errMsg, errMsg);
 }
 
@@ -135,13 +135,13 @@ const refreshWeatherData = (event) => {
 
 const submitNewLocation = async (event) => {
     event.preventDefault();
-    const text = document.getElementById('searchBar__text')?.value;
+    const text = document.getElementById('searchBar__text').value;
     const entryText = cleanText(text);
     if(!entryText.length)  return;
     swapSpinner(event, '.fa-search');
     // work with API data
     const coords = await getCoordsFromApi(entryText, currentLoc.getUnits());
-    if(coords?.cod === 200) {
+    if(coords.cod === 200) {
         // success
         const myCoordsObj = {
             lat : coords.coord.lat,
