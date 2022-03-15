@@ -1,7 +1,7 @@
 {
   "name": "weatherapp",
   "version": "1.0.0",
-  "description": "This is a Weather App built while following a [Dave Gray](https://www.youtube.com/watch?v=s_Ie_yh_4Co) JavaScript tutorial.",
+  "description": "This is a Weather App built while following a Dave Gray JavaScript tutorial.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/Drakan21/WeatherApp#readme",
   "dependencies": {
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^2.6.1"
   }
 }
