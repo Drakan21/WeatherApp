@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
     const encUrl = encodeURI(url);
 
     try {
-        const w_data = await fetch(url);
+        const w_data = await fetch(encUrl);
         const j_data = await w_data.json();
         return {
             statusCode: 200,
