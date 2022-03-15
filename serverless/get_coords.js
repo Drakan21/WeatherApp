@@ -13,8 +13,10 @@ exports.handler = async (event, context) => {
   try {
     const wdata = await fetch(encUrl);
     const jdata = await wdata.json();
-    console.log(wdata);
-    console.log(jdata);
+
+    console.log("get_coords [RAW]: ", wdata);
+    console.log("get_coords [JSON]: ", jdata);
+
     return {
       statusCode: 200,
       body: JSON.stringify(jdata),
