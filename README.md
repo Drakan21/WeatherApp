@@ -14,7 +14,7 @@ This is a Weather App built while following a [Dave Gray](https://www.youtube.co
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [gitHub](https://github.com/Drakan21/WeatherApp)
-- Live Site URL: [](https://)
+- Live Site URL: [Weather APP On Netlify](https://roostweatherapp.netlify.app/)
 
 ## My process
 
