@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
     const jdata = await wdata.json();
     return {
       statusCode: 200,
-      body: JSON.stringify(wdata),
+      body: `${wdata}`,
     };
   } catch (err) {
     return {
