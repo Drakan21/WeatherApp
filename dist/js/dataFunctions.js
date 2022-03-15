@@ -40,10 +40,12 @@ export const getWeatherFromCoords = async (location) => {
     units: location.getUnits(),
   };
   try {
-    const w_data = await fetch("./.netlify/functions/get_weather", {
+    const reqObj = {
       method: "POST",
       body: JSON.stringify(urlDataObj),
-    });
+    };
+    console.log(reqObj);
+    const w_data = await fetch("./.netlify/functions/get_weather");
     const j_data = await w_data.json();
     return j_data;
   } catch (err) {

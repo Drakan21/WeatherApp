@@ -75,7 +75,6 @@ const geoSuccess = (position) => {
   // set location object
   setLocationObject(currentLoc, myCoordsObj);
   // update data and display
-  console.log(currentLoc);
   updateDataAndDisplay(currentLoc);
 };
 
