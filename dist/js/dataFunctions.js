@@ -81,6 +81,7 @@ export const getCoordsFromApi = async (entry, units) => {
         entry,
         units    
     };
+
     try {
         const w_data = await fetch("./.netlify/functions/get_coords", {
             method: 'POST',

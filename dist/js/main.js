@@ -137,8 +137,7 @@ const submitNewLocation = async (event) => {
     event.preventDefault();
     const text = document.getElementById('searchBar__text')?.value;
     const entryText = cleanText(text);
-    if(!entryText.length) return;
-    (entryText);
+    if(!entryText.length)  return;
     swapSpinner(event, '.fa-search');
     // work with API data
     const coords = await getCoordsFromApi(entryText, currentLoc.getUnits());

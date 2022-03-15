@@ -28,7 +28,7 @@ export const setPlaceHolderText = () => {
 }
 
 export const swapSpinner = (event, class_select) => {
-    if(event?.type === 'click'|| event?.type === 'submit') {
+    if(event && (event.type === 'click'|| event.type === 'submit')) {
         // add spinner to btn
         const ico = document.querySelector(class_select);
         addSpinner(ico);
@@ -59,7 +59,7 @@ const fadeDisplay = () => {
 
 const setFocusOnSearch = () => {
     const srch = document.getElementById("searchBar__text");
-    srch?.focus();
+    srch.focus();
 }
 
 /* */
@@ -227,9 +227,7 @@ const translateIconToFontAwesome = (icon) => {
     const firstChars = icon.slice(0, 2);
     const lastChars = icon.slice(2);
     
-    const _ac = (classes) => {
-        i.classList.add(...classes);
-    }
+    const _ac = (classes) => i.classList.add(...classes);
 
     switch(firstChars) {
         case '01':
