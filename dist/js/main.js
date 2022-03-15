@@ -72,10 +72,10 @@ const geoSuccess = (position) => {
     lon: position.coords.longitude,
     name: `Lat:${position.coords.latitude} Long:${position.coords.longitude}`,
   };
-  console.log(myCoordsObj);
   // set location object
   setLocationObject(currentLoc, myCoordsObj);
   // update data and display
+  console.log(currentLoc);
   updateDataAndDisplay(currentLoc);
 };
 
