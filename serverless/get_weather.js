@@ -1,4 +1,4 @@
-const fetch = import("node-fetch");
+const fetch = request("node-fetch");
 
 const { WEATHER_API_KEY } = process.env;
 
@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
     const jdata = await wdata.json();
     return {
       statusCode: 200,
-      body: JSON.stringify({ data: `${wdata}` }),
+      body: JSON.stringify(jdata),
     };
   } catch (err) {
     return {
